@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -10,26 +11,13 @@
 .todo-list {
     display: flex;
     flex-direction: row;
-
-
 }
 
-i {
-    margin: 6px;
-    padding-top: 10px;
-}
 
 h3 {
     margin: 15px;
     color: rgba(201, 51, 51, 0.603);
 }
-
-hr {
-    height: 1px;
-    background-color: #88818193;
-    border: none;
-}
-
 
 
 
@@ -39,26 +27,7 @@ hr {
     height: 70vh;
     margin: 50px;
     border-radius: 20px;
-
-
-
-    & .other-task {
-        padding: 8px;
-        margin: 8px;
-        background-color: rgba(221, 164, 164, 0.363);
-        border-radius: 5px;
-        color: rgba(201, 51, 51, 0.603);
-
-    }
-
-    & .task-name {
-        margin: 8px;
-        padding: 8px;
-        background-color: rgba(221, 164, 164, 0.363);
-        border-radius: 5px;
-        color: rgba(201, 51, 51, 0.603);
-
-    }
+   
 }
 
 .in-progress {
@@ -68,13 +37,6 @@ hr {
     margin: 50px;
     border-radius: 20px;
 
-    & .test-in-progress {
-        padding: 8px;
-        margin: 8px;
-        background-color: rgba(221, 164, 164, 0.363);
-        border-radius: 5px;
-        color: rgba(201, 51, 51, 0.603);
-        }
 }
 
 .completed {
@@ -83,14 +45,6 @@ hr {
     height: 70vh;
     margin: 50px;
     border-radius: 20px;
-
-    & .created {
-        padding: 8px;
-        margin: 8px;
-        background-color: rgba(221, 164, 164, 0.363);
-        border-radius: 5px;
-        color: rgba(201, 51, 51, 0.603);
-    }
 }
 
 .blocked {

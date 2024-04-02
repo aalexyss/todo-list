@@ -1,35 +1,30 @@
 
+
+
+
+
 <section class="todo-list">
 
   <div class="todo">
     
     <h3>To-Do</h3>
     <div class="other-task">
-    
-      <h2>Other Task</h2> 
-      <hr>
-      <p style="display: inline-block;"><i class="fas fa-user"></i><b>No assignee</b></p>
+      <app-task-item [taskName]="'Other Task'" [assignee]="'No assignee'"></app-task-item>
     </div> 
     <div class="task-name">
-      <h2>Task Name</h2>
-      <hr>
-      <p style="display: inline-block;"><i class="fas fa-user"></i><b>George Ben</b></p>
+      <app-task-item [taskName]="'Task Name'" [assignee]="'No assignee'"></app-task-item>
     </div>
   </div>
   <div class="in-progress">
     <h3>In Progress</h3>
     <div class="test-in-progress">
-      <h2>Test</h2>
-      <hr>
-      <p style="display: inline-block;"><i class="fas fa-user"></i><b>No assignee</b></p>
+      <app-task-item [taskName]="'Test'" [assignee]="'No assignee'"></app-task-item>
     </div>
   </div>
   <div class="completed">
     <h3>Done</h3>
     <div class="created">
-      <h2>Create Front-end</h2>
-      <hr>
-      <p style="display: inline-block;"><i class="fas fa-user"></i><b>Admin</b></p>
+     <app-task-item [taskName]="'Create Front-end'" [assignee]="'Admin'"></app-task-item>
     </div>
   </div>
   <div class="blocked">
