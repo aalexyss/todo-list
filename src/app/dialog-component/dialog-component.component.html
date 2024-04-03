@@ -1,0 +1,25 @@
+<!-- dialog-component.component.html -->
+<div class="backdrop"></div>
+<div class="dialog-container">
+        
+  <div class="dialog-content">
+    <h2 class="dialog-header">Create Assignment</h2>
+    <div class="input-group">
+      <label>Title:</label>
+      <input placeholder="Title" type="text" [(ngModel)]="data.title">
+    </div>
+    <div class="input-group">
+      <label>Description:</label>
+      <input placeholder="Description" type="textarea" rows="5" [(ngModel)]="data.description">
+    </div>
+    <div class="input-group">
+      <label>Priority:</label>
+      <input placeholder="Priority" type="text" [(ngModel)]="data.priority">
+    </div>
+    <div class="input-group">
+      <label>Assignee:</label>
+      <input placeholder="Assignee" type="text" [(ngModel)]="data.assignee">
+    </div>
+  </div>
+  <button class="create-btn">Create</button>
+</div>

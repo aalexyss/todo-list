@@ -19,7 +19,32 @@ h3 {
     color: rgba(201, 51, 51, 0.603);
 }
 
-
+button {
+      background-color:  rgba(201, 51, 51, 0.603);
+      border-radius: 50%;
+      border-style: none;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-size: 23px;
+      font-weight: 500;
+      height: 40px;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 10px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 1px 3px #888888a4;
+      overflow: auto;
+      position: absolute;
+      bottom: 27%;
+      right: 84%;
+      float: right;
+    }
 
 .todo {
     background-color: rgb(236, 223, 223);

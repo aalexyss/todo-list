@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponentComponent } from './dialog-component/dialog-component.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo-list';
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() :void {
+    const dialogRef = this.dialog.open(DialogComponentComponent, {
+
+      data: {
+        title: "",
+        description: "",
+        priority: "",
+        assignee: ""
+      }
+    })
+  }
 }

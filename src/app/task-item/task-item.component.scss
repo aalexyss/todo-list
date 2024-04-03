@@ -1,39 +1,15 @@
  .task-name {
     padding: 8px;
-    margin: 8px;
-    background-color: rgba(221, 164, 164, 0.363);
+    margin: 10px;
+    background-color: rgba(221, 164, 164, 0.205);
     border-radius: 5px;
     color: rgba(201, 51, 51, 0.603);
+    position: relative;
 }
 
-.other-task {
-    padding: 5px;
-    height: 60px;
-    margin: 8px;
-    background-color: rgba(221, 164, 164, 0.363);
-    border-radius: 5px;
-    color: rgba(201, 51, 51, 0.603);
-
-}
-
-.test-in-progress {
-    padding: 8px;
-    margin: 8px;
-    background-color: rgba(221, 164, 164, 0.363);
-    border-radius: 5px;
-    color: rgba(201, 51, 51, 0.603);
-}
-
-.created {
-        padding: 8px;
-        margin: 8px;
-        background-color: rgba(221, 164, 164, 0.363);
-        border-radius: 5px;
-        color: rgba(201, 51, 51, 0.603);
-}
 
 i {
-    margin: 6px; 
+    padding-right: 6px; 
 }
 
 hr {
@@ -41,3 +17,4 @@ hr {
     background-color: #88818193;
     border: none;
 }
+
