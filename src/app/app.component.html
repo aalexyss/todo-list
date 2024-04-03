@@ -1,14 +1,16 @@
 <section class="todo-list">
 
   <div class="todo">
-    
+
     <h3>To-Do</h3>
     <div class="other-task">
       <app-task-item [taskName]="'Other Task'" [assignee]="'No assignee'"></app-task-item>
-    </div> 
+    </div>
     <div class="task-name">
       <app-task-item [taskName]="'Task Name'" [assignee]="'George Ben'"></app-task-item>
-      <button mat-raised-button (click)="openDialog()">+</button>
+      <button color="primary" mat-fab (click)="openDialog()">
+        <i class="fas fa-add"></i>
+      </button>
     </div>
   </div>
   <div class="in-progress">

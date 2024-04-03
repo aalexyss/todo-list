@@ -12,7 +12,7 @@ export class AppComponent {
 
   openDialog() :void {
     const dialogRef = this.dialog.open(DialogComponentComponent, {
-
+      hasBackdrop: true,
       data: {
         title: "",
         description: "",

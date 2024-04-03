@@ -9,6 +9,8 @@ import { DialogComponentComponent } from './dialog-component/dialog-component.co
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -20,11 +22,13 @@ import { MatInputModule } from '@angular/material/input';
   imports: [
     BrowserModule,
     AppRoutingModule,
-   
+
     MatDialogModule,
-    FormsModule, 
+    FormsModule,
     MatInputModule,
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
