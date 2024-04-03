@@ -1,26 +1,28 @@
 <section class="todo-list">
 
   <div class="todo">
-    
+
     <h3>To-Do</h3>
     <div class="other-task">
-      <app-task-item [taskName]="'Other Task'" [assignee]="'No assignee'"></app-task-item>
-    </div> 
+      <app-task-item taskName="Other Task" assignee="No assignee" />
+    </div>
     <div class="task-name">
-      <app-task-item [taskName]="'Task Name'" [assignee]="'George Ben'"></app-task-item>
-      <button mat-raised-button (click)="openDialog()">+</button>
+      <app-task-item taskName="Task Name" assignee="George Ben" />
+      <button color="primary" mat-fab (click)="openDialog()">
+        <i class="fas fa-add"></i>
+      </button>
     </div>
   </div>
   <div class="in-progress">
     <h3>In Progress</h3>
     <div class="test-in-progress">
-      <app-task-item [taskName]="'Test'" [assignee]="'No assignee'"></app-task-item>
+      <app-task-item taskName="Test" assignee="No assignee" />
     </div>
   </div>
   <div class="completed">
     <h3>Done</h3>
     <div class="created">
-     <app-task-item [taskName]="'Create Front-end'" [assignee]="'Admin'"></app-task-item>
+     <app-task-item taskName="Create Front-end" assignee="Admin" />
     </div>
   </div>
   <div class="blocked">
