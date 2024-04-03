@@ -9,8 +9,7 @@ import { DialogComponentComponent } from './dialog-component/dialog-component.co
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
-import {MatButtonModule} from "@angular/material/button";
-import {MatIconModule} from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
 
 
 @NgModule({
@@ -28,7 +27,6 @@ import {MatIconModule} from "@angular/material/icon";
     MatInputModule,
     CommonModule,
     MatButtonModule,
-    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
