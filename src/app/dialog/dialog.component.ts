@@ -7,7 +7,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   templateUrl: './dialog.component.html',
   styleUrls: ['./dialog.component.scss'],
 })
-export class DialogComponentComponent {
+export class DialogComponent {
 
   taskTitle: string = '';
   taskDescription: string = '';
@@ -15,7 +15,7 @@ export class DialogComponentComponent {
   taskAssignee: string = '';
   
   @Output() taskCreated = new EventEmitter<any>();
-  constructor(public dialogRef: MatDialogRef<DialogComponentComponent>) { }
+  constructor(public dialogRef: MatDialogRef<DialogComponent>) { }
 
   
   createAssignment() :void {
