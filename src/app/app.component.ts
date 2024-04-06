@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogComponentComponent } from './dialog/dialog.component';
+import { DialogComponent} from './dialog/dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,7 @@ export class AppComponent {
   ];
 
   openDialog() :void {
-    const dialogRef = this.dialog.open(DialogComponentComponent, {
+    const dialogRef = this.dialog.open(DialogComponent, {
       data: {
         title: "",
         description: "",
