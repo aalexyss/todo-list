@@ -1,4 +1,3 @@
-<!-- dialog-component.component.html -->
 <div class="backdrop"></div>
 <div class="dialog-container">
         
@@ -6,20 +5,21 @@
     <h2 class="dialog-header">Create Assignment</h2>
     <div class="input-group">
       <label>Title:</label>
-      <input placeholder="Title" type="text" [(ngModel)]="data.title">
+      <input class="title"  placeholder="Title" type="text" [(ngModel)]="taskTitle">
     </div>
     <div class="input-group">
       <label>Description:</label>
-      <input placeholder="Description" type="textarea" rows="5" [(ngModel)]="data.description">
+      <input class="description"  placeholder="Description" type="textarea" rows="5" [(ngModel)]="taskDescription">
     </div>
     <div class="input-group">
       <label>Priority:</label>
-      <input placeholder="Priority" type="text" [(ngModel)]="data.priority">
+      <input class="priority" placeholder="Priority" type="text" [(ngModel)]="taskPriority">
     </div>
     <div class="input-group">
       <label>Assignee:</label>
-      <input placeholder="Assignee" type="text" [(ngModel)]="data.assignee">
+      <input placeholder="Assignee" type="text" [(ngModel)]="taskAssignee">
     </div>
   </div>
-  <button class="create-btn">Create</button>
+    <button (click)="createAssignment" class="create-btn">Create</button>
 </div>
+

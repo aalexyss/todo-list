@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./task-item.component.scss']
 })
 export class TaskItemComponent {
-  @Input() taskName: string | undefined;
-  @Input() assignee: string | undefined
+  @Input() taskName?: string;
+  @Input() taskDescription?: string;
+  @Input() taskPriority?: string;
+  @Input() taskAssignee?: string;
 }
