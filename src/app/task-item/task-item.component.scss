@@ -1,24 +1,23 @@
- .task-name {
-    padding: 6px;
-    margin: 10px;
-    background-color: rgba(255, 255, 255, 0.836);
-    border-radius: 5px;
-    color: rgba(46, 47, 48, 0.822);
+.task-name {
+  padding: 6px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 5px;
+  color: rgba(46, 47, 48, 0.822);
 
-    & h2, p {
-        margin: 5px;
-    }
+  & h2,
+  p {
+    margin: 5px;
+  }
 }
 
-
 i {
-    padding-right: 6px; 
-    color: rgba(59, 154, 218, 0.822);
+  padding-right: 6px;
+  color: rgba(59, 154, 218, 0.822);
 }
 
 hr {
-    height: 1px;
-    background-color: #88818193;
-    border: none;
+  height: 1px;
+  background-color: #88818193;
+  border: none;
 }
-

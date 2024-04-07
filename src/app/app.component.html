@@ -1,19 +1,16 @@
-
 <section class="todo-list">
-
   <div class="todo">
-    
     <h3>To-Do</h3>
-    <!-- <div class="other-task">
-      <app-task-item taskName="Other Task" taskAssignee="No assignee"></app-task-item>
-    </div> 
-    <div class="task-name">
-      <app-task-item taskName="Task Name" taskAssignee="George Ben"></app-task-item> -->
-      <div class="task-name" *ngFor="let task of todoTasks">
-        <app-task-item [taskName]="task.name" [taskAssignee]="task.assignee"></app-task-item>
-      </div>
-      <button (click)="openDialog()">+</button>
-    
+
+    <div class="task-name" *ngFor="let task of todoTasks">
+      <app-task-item
+        [taskName]="task.name"
+        [taskAssignee]="task.assignee"
+      ></app-task-item>
+    </div>
+    <button mat-raised-button (click)="openDialog()">
+      <i class="fa-solid fa-plus"></i>
+    </button>
   </div>
   <div class="in-progress">
     <h3>In Progress</h3>
@@ -24,11 +21,13 @@
   <div class="completed">
     <h3>Done</h3>
     <div class="created">
-     <app-task-item taskName="Create Front-end" taskAssignee="Admin"></app-task-item>
+      <app-task-item
+        taskName="Create Front-end"
+        taskAssignee="Admin"
+      ></app-task-item>
     </div>
   </div>
   <div class="blocked">
     <h3>Blocked</h3>
   </div>
-
 </section>
