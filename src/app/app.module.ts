@@ -9,7 +9,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from "@angular/material/button";
 import { MatInputModule } from '@angular/material/input';
-import { DialogComponentComponent } from './dialog/dialog.component';
 
 
 
@@ -17,8 +16,7 @@ import { DialogComponentComponent } from './dialog/dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TaskItemComponent,
-    DialogComponentComponent
+    TaskItemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,25 +1,26 @@
 <div class="backdrop"></div>
 <div class="dialog-container">
-        
   <div class="dialog-content">
     <h2 class="dialog-header">Create Assignment</h2>
-    <div class="input-group">
-      <label>Title:</label>
-      <input class="title"  placeholder="Title" type="text" [(ngModel)]="taskTitle">
-    </div>
-    <div class="input-group">
-      <label>Description:</label>
-      <input class="description"  placeholder="Description" type="textarea" rows="5" [(ngModel)]="taskDescription">
-    </div>
-    <div class="input-group">
-      <label>Priority:</label>
-      <input class="priority" placeholder="Priority" type="text" [(ngModel)]="taskPriority">
-    </div>
-    <div class="input-group">
-      <label>Assignee:</label>
-      <input placeholder="Assignee" type="text" [(ngModel)]="taskAssignee">
-    </div>
-  </div>
-    <button (click)="createAssignment" class="create-btn">Create</button>
-</div>
 
+    <form class="form">
+      <mat-form-field appearance="outline">
+        <mat-label>Title:</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Description:</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Priority:</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Assignment:</mat-label>
+        <input matInput />
+      </mat-form-field>
+    </form>
+  </div>
+  <button (click)="createAssignment()" class="create-btn">Create</button>
+</div>
